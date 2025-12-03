@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 @import "tailwindcss";
 
 :root {
@@ -19,8 +21,95 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Aplica por defecto la fuente Quicksand a
+ los textos de toda la pagina web  */
+/* @layer base {
+  body {
+    font-family: "Quicksand", sans-serif;
+  }
+} */
+
+@theme {
+  /* Crea una variable de CSS y una clase de utilidad de tailwind
+     que es reconocida por Tailwind intellisense de la fuente
+     La clase de utilidad: font-quicksand
+     */
+  --font-quicksand: "Quicksand", sans-serif;
+  --animate-wavey: wavey 1000ms linear infinite;
+  --animation-delay-100: 100ms;
+  --animation-delay-200: 200ms;
+  --animation-delay-300: 300ms;
+  --animation-delay-400: 400ms;
+  --animation-delay-500: 500ms;
+  --animation-delay-600: 600ms;
+  --animation-delay-700: 700ms;
+  --animation-delay-800: 800ms;
+  --animation-delay-900: 900ms;
+  --animation-delay-1000:1000ms;
+  
+  @keyframes wavey {
+    0%, 100%{
+      transform: scaleY(0.5)
+    }
+    50% {
+      transform: scaleY(1.5)
+    }
+  }
+
+}
+
+@layer base {
+  body {
+    font-family: var(--font-quicksand);
+  }
+}
+
+@layer components {
+    .header-menu-item {
+      /* Default */
+      @apply font-bold relative flex h-full items-center p-4 text-pink-200
+            transition-colors ease-in-out;
+      /* Hover */
+      @apply hover:text-zinc-200 hover:bg-white/10 hover:underline;
+
+    }
+
+    .header-mobile-item {
+      /* Default */
+      @apply relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200  transition-colors;
+      /* Hover */
+      @apply hover:bg-white/10 hover:text-zinc-200;
+    }
+
+}
+
+/* Aca cree una especie de grupo, como group-hover: que reacciona cuando el 
+   Contenedor del grupo tiene la propiedad open o no.
+   Esto me permite crear una notacion "group-open:" y sobre esta, poder hacer
+   cosas como:
+   group-open:text-2xl group-open:bg-ambar-200
+*/
+@custom-variant group-open{
+    &:is(:where(.group):is( .open, [open], :popover-open, :open) *) {
+       @slot
+    }
+}
+
+
+@custom-variant peer-open{
+    &:is(:where(.peer):is( .open, [open], :popover-open, :open) ~ *) {
+       @slot
+    }
+}
+
+@utility animation-delay-* {
+  /* Me permite crear las clases animation-delay-100, 200, etc
+    y que te lo detecte directamente intellisense 
+  */
+  animation-delay: --value(--animation-delay-*);
+  /* Me permite usar clases de tailwind que usan corchetes( [9px], [30ms], [8s], etc)
+   Ejemplo: animation-delay[2s], animation-delay[80ms] */
+  animation-delay: --value([*]);
 }

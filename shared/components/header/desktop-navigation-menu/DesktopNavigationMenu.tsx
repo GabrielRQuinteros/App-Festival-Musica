@@ -1,0 +1,33 @@
+import Link from 'next/link';
+export const DesktopNavigationMenu = () => {
+  return (
+    <>
+        <ul className="flex-1 md:flex justify-end items-center hidden" >
+            <li>
+                <Link className="header-menu-item" href={'#'} >
+                    <span>Inicio</span>
+                </Link>
+            </li>
+            <li>
+                <Link className="header-menu-item" href={'#'} >
+                    <span>Bandas</span>
+                </Link>
+            </li>
+            <li>
+                <div className="header-menu-item group hover:no-underline">
+                    <span className="cursor-pointer">Tickets</span>
+                    <ul className="absolute top-full right-0 bg-pink-500 whitespace-nowrap rounded-b-sm text-right hidden group-hover:block">
+                        <li className="p-4 font-bold text-pink-200 hover:bg-white/5 hover:text-zinc-200 transition-colors ease-in-out cursor-pointer hover:underline">Ticket para 1 día</li>
+                        <li className="p-2 hover:underline">Subitem para 7 días</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <Link className="header-menu-item" href={'#'} >
+                    <span>Soporte</span>
+                </Link>
+            </li>
+        </ul>
+    </>
+  )
+}
