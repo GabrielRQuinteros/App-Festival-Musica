@@ -1,11 +1,10 @@
-import Image from "next/image";
 import { SuscriptionForm } from "./suscription-form/SuscriptionForm";
 import { BrandAnimatedLogo } from "./brand-animated-logo/BrandAnimatedLogo";
 
 export const HeroSection = () => {
   const backgroundImage = `url('images/hero.jpg')`;
   return (
-    <>
+    <section>
         <div className="flex flex-col items-center justify-center
                         h-[calc(100vh-200px)] min-h-[400px]
                         bg-cover bg-center bg-fixed text-zinc-200"
@@ -21,6 +20,6 @@ export const HeroSection = () => {
                   <SuscriptionForm/>
             </div>
         </div>
-    </>
+    </section>
   )
 }

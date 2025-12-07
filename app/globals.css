@@ -64,6 +64,25 @@
   body {
     font-family: var(--font-quicksand);
   }
+
+  h1{
+    @apply text-6xl font-bold;
+  }
+  h2{
+    @apply text-5xl font-bold;
+  }
+  h3{
+    @apply text-4xl font-bold;
+  }
+  h4{
+    @apply text-3xl font-bold;
+  }
+  h5{
+    @apply text-2xl font-bold;
+  }
+  h6{
+    @apply text-xl font-bold;
+  }
 }
 
 @layer components {
@@ -83,6 +102,9 @@
       @apply hover:bg-white/10 hover:text-zinc-200;
     }
 
+    .carousel-arrow {
+      @apply relative -top-8 flex cursor-pointer items-center justify-center p-2 text-5xl;
+    }
 }
 
 /* Aca cree una especie de grupo, como group-hover: que reacciona cuando el 
@@ -113,3 +135,6 @@
    Ejemplo: animation-delay[2s], animation-delay[80ms] */
   animation-delay: --value([*]);
 }
+
+
+
