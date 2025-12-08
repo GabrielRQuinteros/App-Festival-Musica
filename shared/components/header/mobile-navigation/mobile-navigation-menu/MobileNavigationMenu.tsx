@@ -40,7 +40,7 @@ export const MobileNavigationMenu = () => {
                 </ul>
             </li>
             <li className="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10">
-              <Link href="#">
+              <Link href="#footer">
                 <span>Soporte</span>
               </Link>
             </li>

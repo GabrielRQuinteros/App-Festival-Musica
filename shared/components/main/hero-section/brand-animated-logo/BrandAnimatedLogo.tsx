@@ -21,8 +21,8 @@ export const BrandAnimatedLogo = () => {
       </div>
 
       <div className="font-bold text-5xl">
-        <span className="">tw:</span>
-        <span className="text-sky-900">mf</span>
+        <span className="">Rock:</span>
+        <span className="text-sky-900">Fest</span>
       </div>
       <div className="font-bold mt-3 text-sm">
         Avisarme de las últimas noticias y promociones

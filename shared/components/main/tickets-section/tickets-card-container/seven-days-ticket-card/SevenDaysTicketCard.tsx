@@ -98,9 +98,9 @@ export const SevenDaysTicketCard = () => {
         </li>
       </ul>
       <a
-        href="#"
+        href=""
         aria-describedby="tier-enterprise"
-        className="mt-8 block rounded-md bg-pink-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white hover:bg-sky-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10"
+        className="mt-8 block rounded-md bg-pink-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white hover:text-pink-500 hover:inset-ring hover:inset-ring-pink-500 hover:bg-zinc-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10"
       >
         Comprar Ya
       </a>

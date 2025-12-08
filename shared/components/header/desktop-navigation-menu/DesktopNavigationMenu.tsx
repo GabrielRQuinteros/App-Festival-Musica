@@ -23,7 +23,7 @@ export const DesktopNavigationMenu = () => {
                 </div>
             </li>
             <li>
-                <Link className="header-menu-item" href={'#'} >
+                <Link className="header-menu-item" href={'#footer'} >
                     <span>Soporte</span>
                 </Link>
             </li>

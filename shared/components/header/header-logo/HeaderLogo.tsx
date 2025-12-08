@@ -11,8 +11,8 @@ export const HeaderLogo = () => {
                         className="w-[50px]"
                     />
                 <div className={`font-bold text-2xl` } >
-                    <span>tw:</span>
-                    <span className="text-sky-900" >mf</span>
+                    <span>Rock:</span>
+                    <span className="text-sky-900" >Fest</span>
                 </div>
             </div>
     </>

@@ -83,6 +83,7 @@
   h6{
     @apply text-xl font-bold;
   }
+  
 }
 
 @layer components {
@@ -135,6 +136,3 @@
    Ejemplo: animation-delay[2s], animation-delay[80ms] */
   animation-delay: --value([*]);
 }
-
-
-

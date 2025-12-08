@@ -57,10 +57,10 @@ export const OneDayTicketCard = () => {
         </li>
       </ul>
       <a
-        href="#"
+        href=""
         aria-describedby="tier-hobby"
         className="mt-8 block rounded-md bg-white/2.5 border- px-3.5 py-2.5 text-center text-sm font-semibold
-                dark:text-zinc-300 inset-ring inset-ring-zinc-500 dark:hover:bg-zinc-900 hover:bg-pink-500 hover:inset-ring-pink-500 hover:text-zinc-200 focus-visible:outline-2
+                dark:text-zinc-300 inset-ring inset-ring-zinc-500 hover:text-pink-500 hover:inset-ring hover:inset-ring-pink-500 hover:bg-zinc-200 focus-visible:outline-2
                  focus-visible:outline-offset-2 focus-visible:outline-white/75 sm:mt-10 "
       >
         Comprar Ya
