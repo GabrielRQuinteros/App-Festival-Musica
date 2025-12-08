@@ -19,12 +19,12 @@ export const MobileNavigationMenu = () => {
         <div className="absolute bg-linear-to-r from-rose-500 to-pink-500 w-full left-0 top-16 peer-open:block hidden">
           <ul>
             <li className="header-mobile-item">
-              <Link href="#">
+              <Link href="#hero-section">
                 <span>Inicio</span>
               </Link>
             </li>
             <li className="header-mobile-item">
-              <Link href="#">
+              <Link href="#main-artists-section">
                 <span>Bandas</span>
               </Link>
             </li>
@@ -32,10 +32,10 @@ export const MobileNavigationMenu = () => {
                 <span  onClick={onClickTicketsMenuItem} className="header-mobile-item text-center font-bold">Tickets</span>
                 <ul className="hidden group-open:block">
                   <li className="header-mobile-item font-medium relative text-center p-4 text-pink-200 hover:text-zinc-200 hover:bg-white/5 ease-in-out">
-                    <span>Ticket para 1 día</span>
+                    <Link href={"#tickets-section"}>Ticket para 1 día</Link>
                   </li>
                   <li className="header-mobile-item relative font-medium text-center p-4 text-pink-200 hover:text-zinc-200 hover:bg-white/5 ease-in-out">
-                    <span>Ticket para 7 días</span>
+                    <Link href={"#tickets-section"}>Ticket para 7 días</Link>
                   </li>
                 </ul>
             </li>

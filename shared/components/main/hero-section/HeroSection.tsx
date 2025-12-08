@@ -4,7 +4,7 @@ import { BrandAnimatedLogo } from "./brand-animated-logo/BrandAnimatedLogo";
 export const HeroSection = () => {
   const backgroundImage = `url('images/hero.jpg')`;
   return (
-    <section>
+    <section id="hero-section">
         <div className="flex flex-col items-center justify-center
                         h-[calc(100vh-200px)] min-h-[400px]
                         bg-cover bg-center bg-fixed text-zinc-200"

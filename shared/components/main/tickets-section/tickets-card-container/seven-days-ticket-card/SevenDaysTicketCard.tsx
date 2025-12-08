@@ -2,7 +2,7 @@ import { FaStar } from "react-icons/fa";
 
 export const SevenDaysTicketCard = () => {
   return (
-    <div className="relative rounded-3xl bg-gray-800 p-8 ring-1 ring-white/10 sm:p-10">
+    <div className="relative rounded-3xl bg-zinc-800 p-8 ring-1 ring-white/10 sm:p-10">
         <div className="absolute top-4 right-4 text-pink-500">
             <FaStar className="size-8" />
         </div>
